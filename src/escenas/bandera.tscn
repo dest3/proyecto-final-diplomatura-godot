@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3sl7yra5u3qb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2w2kd"]
+
+[node name="bandera" type="Area2D"]
+
+[node name="flag" type="Sprite2D" parent="."]
+position = Vector2(-1, -1)
+
+[node name="obtenido" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2w2kd")
