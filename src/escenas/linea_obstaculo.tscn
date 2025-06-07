@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://cong0p7xnnuek"]
+[gd_scene load_steps=2 format=3 uid="uid://cong0p7xnnuek"]
+
+[ext_resource type="Script" uid="uid://bt2ds3wik657i" path="res://src/scripts/linea_obstaculo.gd" id="1_et2u8"]
 
 [node name="linea_obstaculo" type="Node2D"]
+script = ExtResource("1_et2u8")

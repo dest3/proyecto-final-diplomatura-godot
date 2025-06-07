@@ -1,6 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsya4rkfjwaru"]
+[gd_scene load_steps=4 format=3 uid="uid://dsya4rkfjwaru"]
 
 [ext_resource type="Script" uid="uid://bu2vyhsfvdims" path="res://src/scripts/jugdor.gd" id="1_nv2b8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nv2b8"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"moving",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8tri"]
 
@@ -8,6 +26,8 @@
 script = ExtResource("1_nv2b8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nv2b8")
+animation = &"moving"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_v8tri")

@@ -1,3 +1,53 @@
-[gd_scene format=3 uid="uid://cahnnooptfh1e"]
+[gd_scene load_steps=9 format=3 uid="uid://cahnnooptfh1e"]
+
+[ext_resource type="PackedScene" uid="uid://b81dsgmill8v0" path="res://src/escenas/mapa.tscn" id="1_bg8j1"]
+[ext_resource type="PackedScene" uid="uid://d3sl7yra5u3qb" path="res://src/escenas/bandera.tscn" id="2_blyxm"]
+[ext_resource type="Script" uid="uid://cd1xvmujlg3i7" path="res://src/scripts/gestor_bandera.gd" id="2_glrbf"]
+[ext_resource type="PackedScene" uid="uid://dsya4rkfjwaru" path="res://src/escenas/jugdor.tscn" id="4_kcqj4"]
+[ext_resource type="Script" uid="uid://brtgktu41fm2p" path="res://src/scripts/spawner_obstaculos.gd" id="5_nxjfm"]
+[ext_resource type="PackedScene" uid="uid://c11mbcg85src8" path="res://src/escenas/hud.tscn" id="5_xmnem"]
+[ext_resource type="PackedScene" uid="uid://cong0p7xnnuek" path="res://src/escenas/linea_obstaculo.tscn" id="6_nxjfm"]
+[ext_resource type="Script" uid="uid://dibbbdvybk0u1" path="res://src/scripts/game_state_manager.gd" id="7_xmnem"]
 
 [node name="main" type="Node"]
+
+[node name="mapa" parent="." instance=ExtResource("1_bg8j1")]
+
+[node name="gestor_bandera" type="Node" parent="."]
+script = ExtResource("2_glrbf")
+
+[node name="bandera" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+
+[node name="bandera2" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+
+[node name="bandera3" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+
+[node name="bandera4" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+
+[node name="jugdor" parent="." instance=ExtResource("4_kcqj4")]
+
+[node name="Spawner_obstaculos" type="Node" parent="."]
+script = ExtResource("5_nxjfm")
+
+[node name="linea_obstaculo" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo2" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo3" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo4" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo5" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo6" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo7" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo8" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="linea_obstaculo9" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+
+[node name="hud" parent="." instance=ExtResource("5_xmnem")]
+
+[node name="GameStateManager" type="Node" parent="."]
+script = ExtResource("7_xmnem")
