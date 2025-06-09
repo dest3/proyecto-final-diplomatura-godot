@@ -15,7 +15,7 @@ var texturas_vidas: Array[TextureRect] = []
 func crear_vidas(cantidad_vidas: int):
 	for i in cantidad_vidas:
 		var texture_rect = TextureRect.new()
-		texture_rect.custom_minimum_size = Vector2(16, 16)
+		texture_rect.custom_minimum_size = Vector2(32, 32)
 		texture_rect.texture = textura_vida
 		texture_rect.texture_filter = TextureRect.TEXTURE_FILTER_NEAREST
 		vidas.add_child(texture_rect)
@@ -24,7 +24,7 @@ func crear_vidas(cantidad_vidas: int):
 
 func mostrar_perder():
 	resultado.text = "PERDISTE!"
-	panel_container.theme_type_variation = "PanelContainerRojo"
+	panel_container.theme_type_variation = "PanelContainer2"
 	center_container.show()
 
 func mostrar_ganar():

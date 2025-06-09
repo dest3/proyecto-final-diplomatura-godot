@@ -48,32 +48,33 @@ script = ExtResource("5_nxjfm")
 
 [node name="linea_obstaculo" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 288)
+contador_obstaculos = 5
 
 [node name="linea_obstaculo2" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 320)
+contador_obstaculos = 10
 
 [node name="linea_obstaculo3" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 256)
+contador_obstaculos = 12
 
 [node name="linea_obstaculo4" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 352)
+contador_obstaculos = 1
+velocidad = 400
 
 [node name="linea_obstaculo5" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 96)
 contador_obstaculos = 10
 distancia_entre_obstaculos = 100
 
-[node name="linea_obstaculo6" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
-position = Vector2(0, 64)
-contador_obstaculos = 6
-distancia_entre_obstaculos = 120
-velocidad = 500
-
 [node name="linea_obstaculo7" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 128)
+distancia_entre_obstaculos = 50
 
 [node name="linea_obstaculo8" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 160)
+distancia_entre_obstaculos = 150
 
 [node name="linea_obstaculo9" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
 position = Vector2(0, 192)

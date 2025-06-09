@@ -11,4 +11,4 @@ func _ready() -> void:
 
 func on_jugador_colisiona():
 	print("{on_jugador_colisiona}")
-	game_state_manager.matar_jugador
+	game_state_manager.matar_jugador()
