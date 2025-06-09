@@ -5,8 +5,8 @@ class_name Jugador
 signal vida_perdida
 signal game_over
 
-const INCREMENTO_POSICION = 16
-const POSICION_INICIAL_JUGADOR = Vector2(8.0, 152.0)
+const INCREMENTO_POSICION = 32
+const POSICION_INICIAL_JUGADOR = Vector2(288.0, 384.0)
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
@@ -27,10 +27,10 @@ func on_timer_timeout():
 	print("[PERDIO VIDA]")
 	vidas -= 1
 	vida_perdida.emit()
-	print("vidas restantes = [", vidas, "]")
+	print("Vidas restantes = [", vidas, "]")
 	
 	if vidas == 0:
-		print("GAME_OVER")
+		print("[GAME_OVER]")
 		set_process_input(false)
 		game_over.emit()
 	else:
@@ -84,7 +84,7 @@ func mover_jugador(posicion_modificada: Vector2) -> void:
 	
 	var posicion_clampeada = Vector2(
 		clamp(posicion_modificada.x, min_x, max_x),
-		clamp(posicion_modificada.y, min_y, min_y)
+		clamp(posicion_modificada.y, min_y, max_y)
 	)
 	
 	nueva_posicion = posicion_clampeada

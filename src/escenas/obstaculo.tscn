@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cexp5k2fcvrno"]
+[gd_scene load_steps=3 format=3 uid="uid://cexp5k2fcvrno"]
+
+[ext_resource type="Texture2D" uid="uid://bnbmyv21ievr2" path="res://assets/tilemap.png" id="1_sxijj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_55lwm"]
 
 [node name="obstaculo" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sxijj")
+region_enabled = true
+region_rect = Rect2(64, 32, 32, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_55lwm")

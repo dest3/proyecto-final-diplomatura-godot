@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3sl7yra5u3qb"]
+[gd_scene load_steps=4 format=3 uid="uid://d3sl7yra5u3qb"]
 
 [ext_resource type="Script" uid="uid://bok71f86d0etj" path="res://src/scripts/bandera.gd" id="1_k4iq8"]
+[ext_resource type="Texture2D" uid="uid://bnbmyv21ievr2" path="res://assets/tilemap.png" id="2_4wu7d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2w2kd"]
 
@@ -9,9 +10,15 @@ script = ExtResource("1_k4iq8")
 
 [node name="flag" type="Sprite2D" parent="."]
 position = Vector2(-1, -1)
+texture = ExtResource("2_4wu7d")
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 32)
 
 [node name="obtenido" type="Sprite2D" parent="."]
 visible = false
+texture = ExtResource("2_4wu7d")
+region_enabled = true
+region_rect = Rect2(96, 0, 32, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_2w2kd")

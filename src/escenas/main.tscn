@@ -17,35 +17,66 @@
 script = ExtResource("2_glrbf")
 
 [node name="bandera" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(96, 128)
 
 [node name="bandera2" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(192, 144)
 
 [node name="bandera3" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(480, 256)
 
 [node name="bandera4" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(384, 256)
+
+[node name="bandera5" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(288, 192)
+
+[node name="bandera6" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(64, 256)
+
+[node name="bandera7" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(352, 64)
+
+[node name="bandera8" parent="gestor_bandera" instance=ExtResource("2_blyxm")]
+position = Vector2(480, 128)
 
 [node name="jugdor" parent="." instance=ExtResource("4_kcqj4")]
+position = Vector2(288, 384)
 
 [node name="Spawner_obstaculos" type="Node" parent="."]
 script = ExtResource("5_nxjfm")
 
 [node name="linea_obstaculo" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 288)
 
 [node name="linea_obstaculo2" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 320)
 
 [node name="linea_obstaculo3" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 256)
 
 [node name="linea_obstaculo4" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 352)
 
 [node name="linea_obstaculo5" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 96)
+contador_obstaculos = 10
+distancia_entre_obstaculos = 100
 
 [node name="linea_obstaculo6" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 64)
+contador_obstaculos = 6
+distancia_entre_obstaculos = 120
+velocidad = 500
 
 [node name="linea_obstaculo7" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 128)
 
 [node name="linea_obstaculo8" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 160)
 
 [node name="linea_obstaculo9" parent="Spawner_obstaculos" instance=ExtResource("6_nxjfm")]
+position = Vector2(0, 192)
 
 [node name="hud" parent="." instance=ExtResource("5_xmnem")]
 

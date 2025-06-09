@@ -8,7 +8,7 @@ class_name Hud
 @onready var resultado: Label = %resultado
 
 
-var textura_vida = preload("res://icon.svg")
+var textura_vida = preload("res://assets/vida.png")
 var texturas_vidas: Array[TextureRect] = []
 
 
